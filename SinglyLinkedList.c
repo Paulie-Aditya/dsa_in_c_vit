@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include<conio.h>
-#include<stdlib.h>
-#include<alloc.h>
+#include <stdlib.h>
 
 // Head is referred to as L
 // Head itself has no value (data), and stores the address of first Node in head.next;
@@ -28,8 +27,7 @@ void main()
     clrscr();
     do
     {
-        printf("\n\n1. Insert First\n2. insert last\n3. insert specific\n4. Delete first\n 5. Delete
-        last\n 6. Delete specific\n 7.Exit\n\n\n");
+        //printf("\n\n1. Insert First\n2. insert last\n3. insert specific\n4. Delete first\n 5. Delete last\n 6. Delete specific\n 7.Exit\n\n\n");
         printf("\nEnter your choice: ");
         scanf("%d",&ch);
         switch(ch)
