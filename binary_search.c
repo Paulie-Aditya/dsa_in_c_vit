@@ -13,10 +13,10 @@ void binarySearch(int arr[], int low, int high, int k){
             break;
         }
         else if(arr[mid]>k){
-            high = mid;
+            high = mid-1;
         }
         else if(arr[mid] <k){
-            low = mid;
+            low = mid+1;
         }
     }
 
@@ -28,9 +28,12 @@ void binarySearch(int arr[], int low, int high, int k){
 }
 
 int main(void){
-    int arr[] = {5,7,10,13,17,25};
+    int arr[] = {5,7,10,13,17,25,-1,20,10,2020,2022,339};
     int n = sizeof(arr)/sizeof(arr[0]);
-    int k = 7;
+
+    int k;
+    printf("Enter element to find: ");
+    scanf("%d",&k);
     binarySearch(arr,0, n-1, k);
 
     return 0;
